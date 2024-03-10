@@ -13,7 +13,7 @@ export default function Modal() {
     }
 
     const getPayment = () => {
-
+        let temp = 0;
     }
 
     return (
