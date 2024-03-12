@@ -23,24 +23,24 @@ function App() {
     <MyState>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/order" element={
+          <Route path="/ecommerce-react-firebase/" element={<Home />} />
+          <Route path="/ecommerce-react-firebase/order" element={
             <ProtectedRoutes>
               <Order />
             </ProtectedRoutes>
           } />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/dashboard" element={
+          <Route path="/ecommerce-react-firebase/cart" element={<Cart />} />
+          <Route path="/ecommerce-react-firebase/dashboard" element={
             <ProtectedRoutesForAdmin><Dashboard /></ProtectedRoutesForAdmin>
           } />
-          <Route path="/productinfo" element={<ProductInfo />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/addproduct" element={
+          <Route path="/ecommerce-react-firebase/productinfo" element={<ProductInfo />} />
+          <Route path="/ecommerce-react-firebase/login" element={<Login />} />
+          <Route path="/ecommerce-react-firebase/signup" element={<Signup />} />
+          <Route path="/ecommerce-react-firebase/addproduct" element={
             <ProtectedRoutesForAdmin><AddProduct /></ProtectedRoutesForAdmin>} />
-          <Route path="/updateproduct" element={
+          <Route path="/ecommerce-react-firebase/updateproduct" element={
             <ProtectedRoutesForAdmin><UpdateProduct /></ProtectedRoutesForAdmin>} />
-          <Route path="/*" element={<NoPage />} />
+          <Route path="/ecommerce-react-firebase/*" element={<NoPage />} />
         </Routes>
         <ToastContainer/>
       </Router>
