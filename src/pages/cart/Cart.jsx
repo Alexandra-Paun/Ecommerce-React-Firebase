@@ -23,7 +23,7 @@ function Cart() {
     // console.log(temp)
   }, [cartItems])
 
-  const shipping = parseInt(100);
+  const shipping = parseInt(5);
   const grandTotal = shipping + totalAmount
 
   const deleteCart = (item) => {
