@@ -101,7 +101,7 @@ function DashboardTab() {
                                                     {title}
                                                 </td>
                                                 <td className="px-6 py-4 text-black ">
-                                                    ₹{price}
+                                                    ${price}
                                                 </td>
                                                 <td className="px-6 py-4 text-black " >
                                                     {category}
@@ -192,7 +192,7 @@ function DashboardTab() {
                                                                 Title
                                                             </td>
                                                             <td className="px-6 py-4 text-black ">
-                                                                ₹100
+                                                                $100
                                                             </td>
                                                             <td className="px-6 py-4 text-black ">
                                                                 pots

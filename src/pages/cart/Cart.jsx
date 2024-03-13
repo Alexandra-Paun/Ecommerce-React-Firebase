@@ -1,18 +1,13 @@
-import React, { useContext, useState, useEffect } from 'react'
-import myContext from '../../context/data/MyContext';
+import React, { useState, useEffect } from 'react'
 import Layout from '../../components/layout/Layout';
 import Modal from '../../components/modal/Modal';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteFromCart } from '../../redux/cartSlice';
 import { toast } from 'react-toastify';
-import CheckoutForm from '../../components/checkout/CheckoutForm';
 
 function Cart() {
   const dispatch = useDispatch()
-
   const cartItems = useSelector((state) => state.cart)
-  console.log(cartItems)
-
   const [totalAmount, setTotalAmount] = useState(0);
   useEffect(() => {
     let temp = 0;
@@ -20,7 +15,6 @@ function Cart() {
       temp = temp + parseInt(cartItem.price)
     })
     setTotalAmount(temp);
-    // console.log(temp)
   }, [cartItems])
 
   const shipping = parseInt(5);
@@ -28,7 +22,7 @@ function Cart() {
 
   const deleteCart = (item) => {
     dispatch(deleteFromCart(item))
-    toast.success('delete g cart');
+    toast.success('Delete from cart');
   }
 
   useEffect(() => {
