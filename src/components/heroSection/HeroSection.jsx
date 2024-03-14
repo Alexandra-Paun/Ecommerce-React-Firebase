@@ -1,6 +1,5 @@
 import React from 'react'
 import img from "./shop2.png"
-import "../../App"
 
 function HeroSection() {
   return (
