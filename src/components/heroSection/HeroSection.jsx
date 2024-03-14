@@ -1,10 +1,13 @@
 import React from 'react'
-import img from "./shopping2.jpeg"
+import img from "./shop2.png"
+import "../../App"
 
 function HeroSection() {
   return (
-    <div>
-        <img src={img} style={{ width: '100%', height: 360 }} />
+    <div className = "hero-style" style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '60vh'}}>
+        <img src={img}
+           style={{ width: '80%', height: '80%' }} 
+        />
     </div>
   )
 }
