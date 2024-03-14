@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Layout from '../../components/layout/Layout';
+import Navbar from '../../components/navbar/Navbar';
 import Modal from '../../components/modal/Modal';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteFromCart } from '../../redux/cartSlice';
@@ -30,7 +30,8 @@ function Cart() {
   }, [cartItems])
 
   return (
-    <Layout >
+    <>
+      <Navbar/>
       <div className="h-screen bg-gray-100 pt-28  " >
         <h1 className="mb-10 text-center text-2xl font-bold">Cart Items</h1>
         <div className="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0 ">
@@ -79,7 +80,7 @@ function Cart() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   )
 }
 
