@@ -105,12 +105,11 @@ export default function Navbar() {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
-
               </button>
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <Link to={'/'} className='flex'>
+                <Link to={'/ecommerce-react-firebase/'} className='flex'>
                   <div className="flex ">
                     <h1 className=' text-2xl font-bold text-black  px-2 py-1 rounded'>E-Shop</h1>
                   </div>
