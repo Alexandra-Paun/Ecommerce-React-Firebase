@@ -56,7 +56,7 @@ export default function Footer() {
 
             <div className="bg-gray-200" >
                 <div className="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
-                    <Link to={'/'} className='flex'>
+                    <Link to={'/ecommerce-react-firebase/'} className='flex'>
                         <div className="flex ">
                             <h1 className=' text-2xl font-bold text-black  px-2 py-1 rounded'>E-Shop</h1>
                         </div>

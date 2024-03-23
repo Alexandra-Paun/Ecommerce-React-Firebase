@@ -36,7 +36,7 @@ function MyState(props) {
     try {
       await addDoc(productRef, products)
       toast.success("Product Add successfully")
-      window.location.href = '/dashboard'
+      window.location.href = '/ecommerce-react-firebase/dashboard'
       getProductData()
       //closeModal()
       setLoading(false)
@@ -89,7 +89,7 @@ function MyState(props) {
       toast.success("Product Updated successfully")
       getProductData();
       setLoading(false)
-      window.location.href = '/dashboard'
+      window.location.href = '/ecommerce-react-firebase/dashboard'
     } catch (error) {
       setLoading(false)
       console.log(error)
