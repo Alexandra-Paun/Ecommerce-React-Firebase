@@ -23,7 +23,7 @@ function App() {
     <MyState>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/ecommerce-react-firebase/" element={<Home />} />
           <Route path="/order" element={
             <ProtectedRoutes>
               <Order />
