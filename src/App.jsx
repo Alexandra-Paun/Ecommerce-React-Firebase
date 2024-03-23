@@ -23,7 +23,7 @@ function App() {
     <MyState>
       <Router>
         <Routes>
-          <Route path="/ecommerce-react-firebase" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/order" element={
             <ProtectedRoutes>
               <Order />
@@ -61,12 +61,12 @@ export const ProtectedRoutes = ({ children }) => {
 }
 
 export const ProtectedRoutesForAdmin = ({children}) => {
-  const admin = JSON.parse(localStorage.getItem('user'))
-
-  if (admin.user.email === 'alexandrapaun@gmail.com') {
-    return children
-  }
-  else {
+  let admin = JSON.parse(localStorage.getItem('user'))
+  if(admin) {
+    if (admin.user.email === 'alexandrapaun@gmail.com') {
+      return children
+    }
+  } else {
     return <Navigate to='/login' />
   }
 }
